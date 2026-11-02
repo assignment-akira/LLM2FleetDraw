@@ -1,0 +1,14 @@
+name: llm2fleetdraw-sd15-eval
+services:
+  sd15:
+    build:
+      context: ./sd15_eval
+    gpus: all
+    working_dir: /workspace
+    volumes:
+      - ./sd15_eval:/workspace:ro
+      - ./data/sd15_eval:/outputs
+      - ./data/sd15_eval_cache:/cache
+    environment:
+      HF_HOME: /cache
+      HF_HUB_DISABLE_TELEMETRY: '1'

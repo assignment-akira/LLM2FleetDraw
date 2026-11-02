@@ -1,0 +1,44 @@
+name: llm2fleetdraw
+
+services:
+  ai-planner:
+    build:
+      context: ./ai_planner
+    volumes:
+      - ./ai_planner:/app:ro
+    networks:
+      - drawing-net
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=3)"
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+
+  ros2-fleet:
+    build:
+      context: ./ros2_fleet
+    environment:
+      DISPLAY: ":0"
+      QT_X11_NO_MITSHM: "1"
+      AI_PLANNER_URL: "http://ai-planner:8000"
+      ROS_DOMAIN_ID: "42"
+      ROS_LOCALHOST_ONLY: "1"
+    volumes:
+      - /mnt/wslg/.X11-unix:/tmp/.X11-unix:ro
+      - ./ros2_fleet:/workspace
+      - ./data:/data
+      - ./logs:/logs
+    depends_on:
+      ai-planner:
+        condition: service_healthy
+    networks:
+      - drawing-net
+
+networks:
+  drawing-net:
+    driver: bridge

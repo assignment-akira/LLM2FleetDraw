@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-11-01T23:48:31.211764+00:00",
+  "source_root": "/home/udonsun/work/kouza/2026/20261017_PAIA1/LLM2FleetDraw",
+  "files": {
+    "compose.yaml": "8eccd195706189d9111e2dc80cdd4d0294d053ad1c60d58a816d052d23ec9f99",
+    "compose.sd15.yaml": "a5e2f247ec1bfa378c313f55d28fc41fc11808b82dc532615bc7598806603a3d",
+    "ai_planner/Dockerfile": "7b72443c2ecb9da48570c7442e756861c99bbe8f7c0f522683d502a855a03d4c",
+    "ai_planner/app.py": "599edaeacaea2978302df84827dde4cec7202e663f7c40f295db50a903657109",
+    "ros2_fleet/Dockerfile": "44df8c22dac57b92420dc94e8ebed82ad7b5e2f2a4e2f9cc2ebe007f288b32c1",
+    "ros2_fleet/one_turtle_logo/batch_partition/draw_fleet_stop.py": "f8767a51a6da23a98717cc09ba4e34888532341b904a7855f5de4deef3573672",
+    "ros2_fleet/one_turtle_logo/batch_partition/launch_generic.py": "bd74fb8a25edca87de69c829864d9c063496d1099fa4263ecfbb3a712d57f58f",
+    "ros2_fleet/one_turtle_logo/kmeans_compare_3/kill_turtles.py": "6e4146b95fd6f84d4031388a0dcc537b60a9f792e958fdf9a5abcd6bdd0b54cd",
+    "ros2_fleet/one_turtle_logo/draw_region_stop.py": "4b919f74242e9f9e872d9092f3a7352e31bd662b4f1041006524a3c84abf89b9",
+    "sd15_eval/Dockerfile": "b86329a4e23e6423f50779fd6b09d1e02eec78d210cada566a3dc7367bb843d2",
+    "sd15_eval/batch_partition/generate_subjects.py": "dc03e8116135c4e45bb54a612048d536d52b86ca5b752190e5a79b3ec64b20f5",
+    "contour_compare/Dockerfile": "e23151eb3a42aa10bdadcd06784a4b2a3f35c46a2c35b6d2d22ba9891805e932",
+    "contour_compare/compare_contours.py": "f8086971898ff61624ef77825bdbd858a867f7c1fa598dc99a50c9558c4cbb82",
+    "batch_partition_v1/extract_strokes.py": "00e62e59556362a3608ce3448db68526589ba864fb7dd227bfba5961532b42be",
+    "batch_partition_v1/partition.py": "69f33bc9f0715d39827120c42d3b371d9fa26208907c86694f0e883d52b1acb9",
+    "batch_partition_v1/write_jobs.py": "b60c342f5b2673884e2485618d1e699db8d70f927fcfee13ae12f2cc5bb13c3b",
+    "data/plans/logo_one_turtle_full.json": "3e58b01509591ae3d7f070ec57957979895ee36cd5960687bd0474f4f7c84ec7",
+    "data/results/batch_partition/partitions/turtle_5_kmeans/plan.json": "8fd2ba74d3c06fa8572ca73343ca7b6c43909577e45bcc9ed5048232e7b06b35",
+    "data/results/batch_partition/partitions/robot_3_kmeans/plan.json": "8703cdc18ea50f13832b416529a228ec99957769ba53b770b523ebfcc67f7953",
+    "scripts/run_batch_partition_v1.sh": "d55c2e928d9b4af9082518e8826547df356ab63938816c0f0d223ff0848a70ef"
+  }
+}

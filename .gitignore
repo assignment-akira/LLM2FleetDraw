@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+**/cache/
+**/logs/
+**/build/
+**/install/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.mp4
+*.zip
